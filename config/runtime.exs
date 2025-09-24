@@ -5,7 +5,7 @@ if System.get_env("PHX_SERVER") do
   config :metrics_demo, MetricsDemoWeb.Endpoint, server: true
 end
 
-# Statix / DogStatsD runtime config (works in dev & prod)
+# Statix / DogStatsD runtime config
 if config_env() in [:dev, :prod] do
   host = System.get_env("STATSD_HOST", "datadog-agent")
   port = System.get_env("STATSD_PORT", "8125") |> String.to_integer()

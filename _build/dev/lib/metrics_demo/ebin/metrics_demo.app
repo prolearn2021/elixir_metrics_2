@@ -1,0 +1,12 @@
+{application,metrics_demo,
+             [{optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger,runtime_tools,
+                             phoenix,phoenix_html,phoenix_live_reload,
+                             phoenix_live_view,esbuild,tailwind,
+                             telemetry_metrics,telemetry_poller,jason,
+                             plug_cowboy,statix]},
+              {description,"metrics_demo"},
+              {modules,[]},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.MetricsDemo.Application',[]}}]}.
