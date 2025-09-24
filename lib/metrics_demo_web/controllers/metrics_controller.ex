@@ -3,7 +3,7 @@ defmodule MetricsDemoWeb.MetricsController do
   alias MetricsDemo.Metrics
 
   def test(conn, _params) do
-    :ok = Metrics.demo_burst()
+    Metrics.demo_burst()
     text(conn, "sent DogStatsD metrics")
   end
 end
