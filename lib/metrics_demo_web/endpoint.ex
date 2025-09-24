@@ -1,7 +1,7 @@
-# lib/metrics_demo_web/endpoint.ex
 defmodule MetricsDemoWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :metrics_demo
 
+  plug Plug.Logger
   plug Plug.RequestId
   plug Plug.Telemetry, event_prefix: [:phoenix, :endpoint]
 
@@ -12,7 +12,6 @@ defmodule MetricsDemoWeb.Endpoint do
 
   plug Plug.MethodOverride
   plug Plug.Head
-
   plug Plug.Session, store: :cookie, key: "_metrics_demo_key", signing_salt: "dev"
 
   plug MetricsDemoWeb.Router

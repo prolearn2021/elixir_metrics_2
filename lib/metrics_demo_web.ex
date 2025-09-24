@@ -1,14 +1,9 @@
 defmodule MetricsDemoWeb do
-  @moduledoc """
-  Entry point for defining your web interface (controllers, routers, etc).
-  """
+  @moduledoc false
 
   def controller do
     quote do
-      use Phoenix.Controller,
-        formats: [:html, :json],
-        layouts: [html: MetricsDemoWeb.Layouts] # can be stubbed
-
+      use Phoenix.Controller, namespace: MetricsDemoWeb
       import Plug.Conn
       import Phoenix.Controller
     end

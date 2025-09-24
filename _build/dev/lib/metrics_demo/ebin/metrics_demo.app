@@ -13,7 +13,8 @@
                         'Elixir.MetricsDemoWeb.Layouts',
                         'Elixir.MetricsDemoWeb.MetricsController',
                         'Elixir.MetricsDemoWeb.Router',
-                        'Elixir.MetricsDemoWeb.Router.Helpers']},
+                        'Elixir.MetricsDemoWeb.Router.Helpers',
+                        'Elixir.MetricsDemoWeb.Telemetry']},
               {registered,[]},
               {vsn,"0.1.0"},
               {mod,{'Elixir.MetricsDemo.Application',[]}}]}.
